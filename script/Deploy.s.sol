@@ -1,16 +1,15 @@
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity ^0.8.16;
+pragma solidity ^0.8.17;
 
 import "forge-std/Script.sol";
-import {Counter} from "src/Counter.sol";
+import {ERC20} from "src/ERC20.sol";
 
 contract Deploy is Script {
-  Counter counter;
+  ERC20 token;
 
   function run() public {
-    // Commented out for now until https://github.com/crytic/slither/pull/1461 is released.
-    // vm.startBroadcast();
-    counter = new Counter();
+    vm.broadcast();
+    token = new ERC20("Token", "TKN", 18);
   }
 }
