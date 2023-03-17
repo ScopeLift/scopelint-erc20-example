@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity ^0.8.17;
 
-// Modified from Solmate at the below commit, with `test_RevertIf_` usage replaced with
+// Modified from Solmate at the below commit, with `testFail` usage replaced with
 // `vm.expectRevert`
 // https://github.com/transmissions11/solmate/blob/1b3adf677e7e383cc684b5d5bd441da86bf4bf1c/src/test/ERC20.t.sol
 
